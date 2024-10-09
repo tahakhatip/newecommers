@@ -1,0 +1,224 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reda | Online Store</title>
+
+    <link rel="icon" href="img/icon.png" />
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Start Header  -->
+
+    <header>
+      <div class="top_header">
+        <div class="container">
+          <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+
+          <form class="search_box" action="">
+            <div class="select_box">
+              <select id="category" name="category">
+                <option value="All Categories">All Categories</option>
+                <option value="Electronics & Digita">Electronics & Digita</option>
+                <option value="Phones & Tablet">Phones & Tablety</option>
+                <option value="Fashion & Clothings">Fashion & Clothings</option>
+                <option value="Telivsion & Monitor">Telivsion & Monitor</option>
+                <option value="Jewelry & Watches">Jewelry & Watches</option>
+                <option value="Washing Machine">Washing Machine</option>
+                <option value="Toys & Hobbies">Toys & Hobbies</option>
+
+              </select>
+            </div>
+
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search For Products"
+              required=""
+            />
+
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+
+          <div class="header_icons">
+            <div class="icon">
+              <a href="#"><i class="fa-regular fa-heart"></i>
+                <span class="count count_favourite">0</span></a>
+            </div>
+
+            <span class="icon">
+              <i  class="fa-solid fa-cart-shopping"></i>
+              <span class="count count_item_header">0</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom_header">
+        <div class="container">
+          <nav class="nav">
+            <div class="category_nav">
+              <div class="category_btn" onclick="open_Categ_List()">
+                <i class="fa-solid fa-bars"></i>
+                <p>Browse Catetory</p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <div class="category_nav_list">
+                <a href="#">Top 10 Offers</a>
+                <a href="#">Electronics & Digita</a>
+                <a href="#">Phones & Tablet</a>
+                <a href="#">Fashion & Clothings</a>
+                <a href="#">Telivsion & Monitor</a>
+                <a href="#">Jewelry & Watches</a>
+                <a href="#">Toys & Hobbies</a>
+              </div>
+            </div>
+
+            <ul class="nav_links">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Accesories</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="login_signup btns">
+            <a href="#" class="btn"
+              >Login <i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+            <a href="#" class="btn"
+              >Sign Up <i class="fa-solid fa-user-plus"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="cart ">
+        <div class="top_cart">
+            <h3>Cart Items : <span class="count_item_cart"> 0</span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+  
+        <div class="items_in_cart" id="cart_items">
+           
+        
+            
+        </div>
+  
+        <div class="bottom_Cart">
+            <div class="total">
+                <p>subtotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+  
+            <div class="button_Cart">
+                <a href="checkout.html" class="btn_cart">checkout</a>
+                <span onclick="close_cart()" class="btn_cart trans_bg">Shop more</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="product_view">
+        <div class="container">
+            <div class="product_image_content">
+
+                <div class="small_img_product">
+                    <img src="img/product/1.png" alt="">
+                    <img src="img/product/4.png" alt="">
+                    <img src="img/product/6.png" alt="">
+                    <img src="img/product/11.png" alt="">
+                </div>
+
+                <img class="big_img" src="img/product/1.png" alt="">
+         
+            </div>
+
+            <div class="product_content">
+                <h3 class="name_product">SAMSUNG 55 Inch UHD 4K Smart TV With Receive</h3>
+
+                <h4>Availability:  <span>in Stock</span></h4>
+
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="price">
+                    <p><span>$140</span></p>
+                    <p class="old_price">$180</p>
+                </div>
+
+                <p></p>
+                
+                <div class="div_link">
+                    <h3>Categories: </h3>
+                    <div class="links">
+                        <a href="#">Samsung,</a>
+                        <a href="#">Mobile</a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+
+                <div class="div_link">
+                    <h3>Tags: </h3>
+                    <div class="links">
+                        <a href="#">Mobile</a>
+                        <a href="#">Samsung Galaxy</a>
+                        <a href="#">Huawei</a>
+                    </div>
+                </div>
+
+                <div class="div_link">
+                    <h3> Share: </h3>
+                    <div class="links">
+                        <a href="#">Mobile</a>
+                        <a href="#">Samsung Galaxy</a>
+                        <a href="#">Huawei</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End Home Slider -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/swiper.js"></script>
+ 
+    <script src="js/main.js"></script>
+
+
+
+  
+  </body>
+</html>
